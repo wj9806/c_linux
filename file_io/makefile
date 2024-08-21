@@ -27,3 +27,18 @@ fprintf_test: fprintf_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+fgetc_test: fgetc_test.c 
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+fgets_test: fgets_test.c 
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+fscanf_test: fscanf_test.c 
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
