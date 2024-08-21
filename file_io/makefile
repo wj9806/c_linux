@@ -22,3 +22,8 @@ fputs_test: fputs_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+fprintf_test: fprintf_test.c 
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
