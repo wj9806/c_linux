@@ -42,3 +42,8 @@ fscanf_test: fscanf_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+stdin_out_err: stdin_out_err.c 
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
