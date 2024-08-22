@@ -47,3 +47,8 @@ stdin_out_err: stdin_out_err.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+unistd_test: unistd_test.c 
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
