@@ -21,3 +21,8 @@ execve_test: execve_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@ $(EXE)
+
+waitpid_test: waitpid_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
