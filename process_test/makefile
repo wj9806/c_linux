@@ -26,3 +26,13 @@ waitpid_test: waitpid_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+process_test: process_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+unamed_pipe_test: unamed_pipe_test.c
+	-$(CC) -o $@ $^
+	-./$@ helloPipe
+	-rm ./$@
