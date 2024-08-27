@@ -43,3 +43,8 @@ fifo_read: fifo_read.c
 
 fifo_write: fifo_write.c
 	-$(CC) -o $@ $^
+
+shared_memory: shared_memory.c
+	-$(CC) -o $@ $^
+	-./$@ helloPipe
+	-rm ./$@
