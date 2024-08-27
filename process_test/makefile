@@ -48,3 +48,8 @@ shared_memory: shared_memory.c
 	-$(CC) -o $@ $^
 	-./$@ helloPipe
 	-rm ./$@
+
+father_son_mq_test: father_son_mq_test.c
+	-$(CC) -o $@ $^
+	-./$@ helloPipe
+	-rm ./$@
