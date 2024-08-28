@@ -53,3 +53,8 @@ father_son_mq_test: father_son_mq_test.c
 	-$(CC) -o $@ $^
 	-./$@ helloPipe
 	-rm ./$@
+
+signal_test: signal_test.c
+	-$(CC) -o $@ $^
+	-./$@ helloPipe
+	-rm ./$@
