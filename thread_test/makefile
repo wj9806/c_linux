@@ -9,3 +9,23 @@ terminate_test: terminate_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+thread_detach_test: thread_detach_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+thread_cancel_test: thread_cancel_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+thread_cancel_async_test: thread_cancel_async_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+thread_cancel_disable_test: thread_cancel_disable_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
