@@ -29,3 +29,13 @@ thread_cancel_disable_test: thread_cancel_disable_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+race_condition_test: race_condition_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+mutex_test: mutex_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
