@@ -44,3 +44,8 @@ rwlock_test: rwlock_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+condition_test: condition_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
