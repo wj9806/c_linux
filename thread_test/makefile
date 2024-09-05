@@ -70,3 +70,13 @@ unamed_sem_count_process: unamed_sem_count_process.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+named_sem_thread: named_sem_thread.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+named_sem_count_process: named_sem_count_process.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
