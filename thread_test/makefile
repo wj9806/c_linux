@@ -49,3 +49,13 @@ condition_test: condition_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+unamed_sem_thread: unamed_sem_thread.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+unamed_sem_process: unamed_sem_process.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
