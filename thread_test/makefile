@@ -80,3 +80,8 @@ named_sem_count_process: named_sem_count_process.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+thread_pool_test: thread_pool_test.c
+	-$(CC) -o $@ $^ `pkg-config --cflags --libs glib-2.0`
+	-./$@
+	-rm ./$@
